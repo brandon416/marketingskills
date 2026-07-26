@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pricing"
+  short_description: "Plan pricing and packaging decisions"
+  default_prompt: "Use $pricing to plan pricing and packaging decisions."

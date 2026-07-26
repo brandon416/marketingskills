@@ -1,0 +1,4 @@
+interface:
+  display_name: "Public Relations"
+  short_description: "Plan earned media and press outreach"
+  default_prompt: "Use $public-relations to plan earned media and press outreach."

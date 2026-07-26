@@ -1,0 +1,4 @@
+interface:
+  display_name: "Signup Conversion"
+  short_description: "Improve signup and trial conversion"
+  default_prompt: "Use $signup to improve signup and trial conversion."

@@ -2,7 +2,9 @@
 node_modules/
 
 # Skill install artifacts (npx skills add)
-.agents/
+# Keep the tracked Codex discovery link, ignore generated product context and locks.
+.agents/*
+!.agents/skills
 .claude/
 skills-lock.json
 

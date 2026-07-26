@@ -1,0 +1,4 @@
+interface:
+  display_name: "Offer Design"
+  short_description: "Design a clear, compelling offer"
+  default_prompt: "Use $offers to design a clear, compelling offer."

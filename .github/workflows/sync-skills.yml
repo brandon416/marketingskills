@@ -20,12 +20,15 @@ jobs:
           persist-credentials: true
 
       - name: Sync skills
-        run: node .github/scripts/sync-skills.js
+        run: |
+          node .github/scripts/sync-skills.js
+          node scripts/generate-codex-metadata.mjs
+          node scripts/validate-codex.mjs
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_user_name: Coreybot
           commit_user_email: coreybot+github-actions[bot]@users.noreply.github.com
-          commit_message: "chore: sync skills with marketplace.json, plugin.json, and README"
-          file_pattern: ".claude-plugin/marketplace.json .claude-plugin/plugin.json README.md"
+          commit_message: "chore: sync skills with agent metadata, plugin manifests, and README"
+          file_pattern: ".agents/skills .claude-plugin/marketplace.json .claude-plugin/plugin.json .codex-plugin/plugin.json README.md skills/*/agents/openai.yaml"

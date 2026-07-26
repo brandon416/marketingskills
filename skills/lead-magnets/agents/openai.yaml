@@ -1,0 +1,4 @@
+interface:
+  display_name: "Lead Magnets"
+  short_description: "Create lead magnets that earn attention"
+  default_prompt: "Use $lead-magnets to create lead magnets that earn attention."

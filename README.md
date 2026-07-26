@@ -2,6 +2,20 @@
 
 A collection of AI agent skills focused on marketing tasks. Built for technical marketers and founders who want AI coding agents to help with conversion optimization, copywriting, SEO, analytics, and growth engineering. Works with Claude Code, OpenAI Codex, Cursor, Windsurf, and any agent that supports the [Agent Skills spec](https://agentskills.io).
 
+## Codex-Native Edition
+
+This fork includes the files Codex expects for direct project use:
+
+- `AGENTS.md` for repository-wide operating instructions
+- `.agents/skills` for automatic local skill discovery
+- `.codex/config.toml` and `.codex/agents/*.toml` for four focused marketing agents
+- `.codex-plugin/plugin.json` for installable plugin packaging
+- `agents/openai.yaml` inside every skill for clear names, prompts, and skill cards
+
+Clone the repository, open it as a trusted project in Codex, and invoke a skill with `$skill-name`, such as `$marketing-plan` or `$copywriting`. The original skill content stays in `skills/`, so direct project use and plugin installation use the same files.
+
+The Codex packaging in this fork is maintained by Brandon Pascual. The original marketing skill library was created by Corey Haines and remains available under the MIT license.
+
 Built by [Corey Haines](https://corey.co?ref=marketingskills). Need hands-on help? Check out [Conversion Factory](https://conversionfactory.co?ref=marketingskills) — Corey's agency for conversion optimization, landing pages, and growth strategy. Want to learn more about marketing? Subscribe to [Swipe Files](https://swipefiles.com?ref=marketingskills). Want to get dangerously good at using AI for marketing? Check out [AI Marketing Training](https://conversionfactory.co/offers/ai-marketing-training?ref=marketingskills). Want an autonomous AI agent that uses these skills to be your CMO? Try [Magister](https://magistermarketing.com?ref=marketingskills).
 
 New to the terminal and coding agents? Check out the companion guide [Coding for Marketers](https://codingformarketers.com?ref=marketingskills).

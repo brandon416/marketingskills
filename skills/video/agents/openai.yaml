@@ -1,0 +1,4 @@
+interface:
+  display_name: "Marketing Video"
+  short_description: "Plan and produce marketing videos"
+  default_prompt: "Use $video to plan and produce marketing videos."

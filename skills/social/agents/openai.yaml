@@ -1,0 +1,4 @@
+interface:
+  display_name: "Social Content"
+  short_description: "Create focused social media content"
+  default_prompt: "Use $social to create focused social media content."

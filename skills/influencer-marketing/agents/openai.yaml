@@ -1,0 +1,4 @@
+interface:
+  display_name: "Influencer Marketing"
+  short_description: "Plan creator and influencer campaigns"
+  default_prompt: "Use $influencer-marketing to plan creator and influencer campaigns."

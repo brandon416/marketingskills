@@ -1,0 +1,4 @@
+interface:
+  display_name: "Marketing Council"
+  short_description: "Get multiple marketing expert perspectives"
+  default_prompt: "Use $marketing-council to get multiple marketing expert perspectives."

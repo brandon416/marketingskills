@@ -1,0 +1,4 @@
+interface:
+  display_name: "User Onboarding"
+  short_description: "Improve activation and onboarding"
+  default_prompt: "Use $onboarding to improve activation and onboarding."

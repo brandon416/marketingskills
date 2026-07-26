@@ -1,0 +1,4 @@
+interface:
+  display_name: "Marketing Images"
+  short_description: "Create and improve marketing images"
+  default_prompt: "Use $image to create and improve marketing images."

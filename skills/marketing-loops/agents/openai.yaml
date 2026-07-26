@@ -1,0 +1,4 @@
+interface:
+  display_name: "Marketing Loops"
+  short_description: "Design repeatable marketing loops"
+  default_prompt: "Use $marketing-loops to design repeatable marketing loops."

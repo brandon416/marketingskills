@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cold Email"
+  short_description: "Write cold email sequences that get replies"
+  default_prompt: "Use $cold-email to write cold email sequences that get replies."

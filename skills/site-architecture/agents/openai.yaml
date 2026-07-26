@@ -1,0 +1,4 @@
+interface:
+  display_name: "Site Architecture"
+  short_description: "Plan clear website structure and navigation"
+  default_prompt: "Use $site-architecture to plan clear website structure and navigation."

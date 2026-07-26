@@ -1,0 +1,4 @@
+interface:
+  display_name: "Churn Prevention"
+  short_description: "Reduce churn and recover failed payments"
+  default_prompt: "Use $churn-prevention to reduce churn and recover failed payments."

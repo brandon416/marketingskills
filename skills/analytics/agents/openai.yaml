@@ -1,0 +1,4 @@
+interface:
+  display_name: "Marketing Analytics"
+  short_description: "Set up and audit marketing analytics"
+  default_prompt: "Use $analytics to set up and audit marketing analytics."

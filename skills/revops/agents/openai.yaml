@@ -1,0 +1,4 @@
+interface:
+  display_name: "Revenue Operations"
+  short_description: "Improve lead routing and revenue operations"
+  default_prompt: "Use $revops to improve lead routing and revenue operations."

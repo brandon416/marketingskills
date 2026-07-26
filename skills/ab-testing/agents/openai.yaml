@@ -1,0 +1,4 @@
+interface:
+  display_name: "A/B Testing"
+  short_description: "Plan reliable marketing experiments"
+  default_prompt: "Use $ab-testing to plan reliable marketing experiments."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Community Marketing"
+  short_description: "Build community-led marketing programs"
+  default_prompt: "Use $community-marketing to build community-led marketing programs."
