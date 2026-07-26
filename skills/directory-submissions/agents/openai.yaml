@@ -1,0 +1,4 @@
+interface:
+  display_name: "Directory Submissions"
+  short_description: "Plan and track directory submissions"
+  default_prompt: "Use $directory-submissions to plan and track directory submissions."

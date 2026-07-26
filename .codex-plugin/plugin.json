@@ -1,0 +1,32 @@
+{
+  "name": "marketingskills",
+  "version": "2.9.0",
+  "description": "Codex-ready marketing skills for strategy, copy, SEO, paid acquisition, conversion, retention, and growth.",
+  "author": {
+    "name": "Corey Haines and Brandon Pascual",
+    "url": "https://github.com/brandon416"
+  },
+  "homepage": "https://github.com/brandon416/marketingskills",
+  "repository": "https://github.com/brandon416/marketingskills",
+  "license": "MIT",
+  "keywords": [
+    "marketing",
+    "codex",
+    "agent-skills",
+    "copywriting",
+    "seo",
+    "growth"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Marketing Skills for Codex",
+    "shortDescription": "Practical marketing workflows for Codex.",
+    "longDescription": "Plan and execute focused marketing work with reusable skills for positioning, research, copy, SEO, paid acquisition, conversion, retention, and measurement.",
+    "developerName": "Corey Haines and Brandon Pascual",
+    "category": "Productivity",
+    "capabilities": [
+      "Write"
+    ],
+    "defaultPrompt": "Build a focused marketing plan using the smallest set of relevant skills."
+  }
+}

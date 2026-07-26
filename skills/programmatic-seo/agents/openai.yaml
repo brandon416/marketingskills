@@ -1,0 +1,4 @@
+interface:
+  display_name: "Programmatic SEO"
+  short_description: "Plan scalable SEO page programs"
+  default_prompt: "Use $programmatic-seo to plan scalable SEO page programs."

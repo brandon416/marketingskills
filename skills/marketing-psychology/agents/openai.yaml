@@ -1,0 +1,4 @@
+interface:
+  display_name: "Marketing Psychology"
+  short_description: "Apply behavioral science to marketing"
+  default_prompt: "Use $marketing-psychology to apply behavioral science to marketing."

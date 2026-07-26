@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prospecting"
+  short_description: "Find and qualify likely prospects"
+  default_prompt: "Use $prospecting to find and qualify likely prospects."

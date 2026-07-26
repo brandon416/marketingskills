@@ -1,0 +1,38 @@
+name: Validate Codex Configuration
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".agents/**"
+      - ".codex/**"
+      - ".codex-plugin/**"
+      - "skills/**"
+      - "scripts/generate-codex-metadata.mjs"
+      - "scripts/validate-codex.mjs"
+  pull_request:
+    branches: [main]
+    paths:
+      - ".agents/**"
+      - ".codex/**"
+      - ".codex-plugin/**"
+      - "skills/**"
+      - "scripts/generate-codex-metadata.mjs"
+      - "scripts/validate-codex.mjs"
+
+concurrency:
+  group: validate-codex-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-slim
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Check generated metadata
+        run: node scripts/generate-codex-metadata.mjs --check
+
+      - name: Validate Codex configuration
+        run: node scripts/validate-codex.mjs

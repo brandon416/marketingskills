@@ -1,0 +1,4 @@
+interface:
+  display_name: "Competitor Content"
+  short_description: "Create competitor comparison content"
+  default_prompt: "Use $competitors to create competitor comparison content."

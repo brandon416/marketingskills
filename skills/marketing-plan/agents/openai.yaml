@@ -1,0 +1,4 @@
+interface:
+  display_name: "Marketing Plan"
+  short_description: "Build a focused marketing plan"
+  default_prompt: "Use $marketing-plan to build a focused marketing plan."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Paywalls"
+  short_description: "Improve upgrade screens and paywalls"
+  default_prompt: "Use $paywalls to improve upgrade screens and paywalls."

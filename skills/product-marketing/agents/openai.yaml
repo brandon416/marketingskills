@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Marketing Context"
+  short_description: "Capture product and audience context"
+  default_prompt: "Use $product-marketing to capture product and audience context."

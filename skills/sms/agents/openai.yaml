@@ -1,0 +1,4 @@
+interface:
+  display_name: "SMS Marketing"
+  short_description: "Plan compliant SMS marketing flows"
+  default_prompt: "Use $sms to plan compliant SMS marketing flows."

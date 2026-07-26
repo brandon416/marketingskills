@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI SEO"
+  short_description: "Improve visibility in AI search"
+  default_prompt: "Use $ai-seo to improve visibility in AI search."

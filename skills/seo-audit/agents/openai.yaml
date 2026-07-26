@@ -1,0 +1,4 @@
+interface:
+  display_name: "SEO Audit"
+  short_description: "Audit and prioritize SEO problems"
+  default_prompt: "Use $seo-audit to audit and prioritize SEO problems."

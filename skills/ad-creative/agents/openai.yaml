@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ad Creative"
+  short_description: "Create and improve ad creative"
+  default_prompt: "Use $ad-creative to create and improve ad creative."

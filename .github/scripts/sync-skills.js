@@ -12,6 +12,7 @@ const path = require("path");
 const SKILLS_DIR = "skills";
 const MARKETPLACE_FILE = ".claude-plugin/marketplace.json";
 const PLUGIN_FILE = ".claude-plugin/plugin.json";
+const CODEX_PLUGIN_FILE = ".codex-plugin/plugin.json";
 const README_FILE = "README.md";
 
 /**
@@ -180,14 +181,34 @@ function updatePluginVersion() {
   return { updated: true, oldVersion, newVersion: marketplaceVersion };
 }
 
+/**
+ * Keep the Codex plugin version aligned with the repository release version.
+ */
+function updateCodexPluginVersion() {
+  if (!fs.existsSync(CODEX_PLUGIN_FILE)) return { updated: false };
+
+  const marketplace = JSON.parse(fs.readFileSync(MARKETPLACE_FILE, "utf8"));
+  const plugin = JSON.parse(fs.readFileSync(CODEX_PLUGIN_FILE, "utf8"));
+  const marketplaceVersion = marketplace.metadata && marketplace.metadata.version;
+
+  if (!marketplaceVersion) return { updated: false };
+  if (plugin.version === marketplaceVersion) return { updated: false };
+
+  const oldVersion = plugin.version;
+  plugin.version = marketplaceVersion;
+  fs.writeFileSync(CODEX_PLUGIN_FILE, JSON.stringify(plugin, null, 2) + "\n");
+  return { updated: true, oldVersion, newVersion: marketplaceVersion };
+}
+
 function main() {
   const skills = getSkillsWithMetadata();
 
   const marketplaceResult = updateMarketplace(skills);
   const readmeUpdated = updateReadme(skills);
   const pluginResult = updatePluginVersion();
+  const codexPluginResult = updateCodexPluginVersion();
 
-  if (!marketplaceResult.updated && !readmeUpdated && !pluginResult.updated) {
+  if (!marketplaceResult.updated && !readmeUpdated && !pluginResult.updated && !codexPluginResult.updated) {
     console.log("Everything is already in sync");
     return;
   }
@@ -201,6 +222,10 @@ function main() {
 
   if (pluginResult.updated) {
     console.log(`Bumped plugin.json version: ${pluginResult.oldVersion} → ${pluginResult.newVersion}`);
+  }
+
+  if (codexPluginResult.updated) {
+    console.log(`Bumped Codex plugin version: ${codexPluginResult.oldVersion} → ${codexPluginResult.newVersion}`);
   }
 
   if (readmeUpdated) {

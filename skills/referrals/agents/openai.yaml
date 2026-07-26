@@ -1,0 +1,4 @@
+interface:
+  display_name: "Referral Programs"
+  short_description: "Build practical referral programs"
+  default_prompt: "Use $referrals to build practical referral programs."

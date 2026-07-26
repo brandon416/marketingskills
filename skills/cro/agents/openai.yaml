@@ -1,0 +1,4 @@
+interface:
+  display_name: "Conversion Optimization"
+  short_description: "Improve website and form conversions"
+  default_prompt: "Use $cro to improve website and form conversions."

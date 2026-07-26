@@ -1,0 +1,4 @@
+interface:
+  display_name: "Popups"
+  short_description: "Create effective popups and banners"
+  default_prompt: "Use $popups to create effective popups and banners."

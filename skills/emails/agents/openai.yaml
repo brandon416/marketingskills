@@ -1,0 +1,4 @@
+interface:
+  display_name: "Lifecycle Emails"
+  short_description: "Create lifecycle email sequences"
+  default_prompt: "Use $emails to create lifecycle email sequences."

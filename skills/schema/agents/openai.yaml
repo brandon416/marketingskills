@@ -1,0 +1,4 @@
+interface:
+  display_name: "Structured Data"
+  short_description: "Plan and validate structured data"
+  default_prompt: "Use $schema to plan and validate structured data."
